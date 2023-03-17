@@ -2,7 +2,7 @@
 
 Beginner level task for practicing loops and arrays.
 
-In the task you have to implement six "GetIndexOfChar" methods that should return the zero-based index (position) of the first occurrence of the specified character ("value" parameter) in the string that is passed as a "str" parameter.
+In the task you have to implement six "GetIndexOf" methods that should return the zero-based index (position) of the first occurrence of the specified character ("value" parameter) in the string that is passed as a "str" parameter.
 
 
 ## Task Description
@@ -12,11 +12,11 @@ The implementation details are described in TODO comments in code files. There a
 Use the _for_, _while_ and _do..while_ statements to repeatedly execute a block of C# statements. Don't use static or instance methods of the [Array class](https://docs.microsoft.com/en-us/dotnet/api/system.array) (IndexOf, LastIndexOf, Find, ForEach, etc.) or [LINQ functionality](https://docs.microsoft.com/en-us/dotnet/api/system.linq).
 
 1. Analyze the implementation of the [GetLastIndexOf(uint[], uint)](GettingArrayElementIndex/ForMethods.cs#L17) method in the _ForMethods.cs_ file. Implement the [GetIndexOf(uint[], uint)](GettingArrayElementIndex/ForMethods.cs#L5) static method. See TODO #1.
-1. Analyze the implementation of the [GetLastIndexOf(uint[], uint, int, int)](GettingArrayElementIndex/ForMethods.cs#L35) method in the _ForMethods.cs_ file. Implement the [GetIndexOfChar(uint[], uint, int, int)](GettingArrayElementIndex/ForMethods.cs#L11) static method. See TODO #2.
-1. Analyze the implementation of the [GetLastIndexOf(ushort[], ushort)](GettingArrayElementIndex/WhileMethods.cs#L17) method in the _WhileMethods.cs_ file. Implement the [GetIndexOfChar(ushort[], ushort)](GettingArrayElementIndex/WhileMethods.cs#L5) static method. See TODO #3.
-1. Analyze the implementation of the [GetLastIndexOf(ushort[], ushort, int, int)](GettingArrayElementIndex/WhileMethods.cs#L38) method in the _WhileMethods.cs_ file. Implement the [GetIndexOfChar(ushort[], ushort, int, int)](GettingArrayElementIndex/WhileMethods.cs#L11) static method. See TODO #4.
-1. Analyze the implementation of the [GetLastIndexOf(ulong[], ulong)](GettingArrayElementIndex/DoWhileMethods.cs#L17) method in the _DoWhileMethods.cs_ file. Implement the [GetIndexOfChar(ulong[], ulong)](GettingArrayElementIndex/DoWhileMethods.cs#L5) static method. See TODO #5.
-1. Analyze the implementation of the [GetLastIndexof(ulong[], ulong, int, int)](GettingArrayElementIndex/DoWhileMethods.cs#L42) method in the _DoWhileMethods.cs_ file. Implement the [GetIndexOfChar(ulong[], ulong, int, int)](GettingArrayElementIndex/DoWhileMethods.cs#L11) static method. See TODO #6.
+1. Analyze the implementation of the [GetLastIndexOf(uint[], uint, int, int)](GettingArrayElementIndex/ForMethods.cs#L35) method in the _ForMethods.cs_ file. Implement the [GetIndexOf(uint[], uint, int, int)](GettingArrayElementIndex/ForMethods.cs#L11) static method. See TODO #2.
+1. Analyze the implementation of the [GetLastIndexOf(ushort[], ushort)](GettingArrayElementIndex/WhileMethods.cs#L17) method in the _WhileMethods.cs_ file. Implement the [GetIndexOf(ushort[], ushort)](GettingArrayElementIndex/WhileMethods.cs#L5) static method. See TODO #3.
+1. Analyze the implementation of the [GetLastIndexOf(ushort[], ushort, int, int)](GettingArrayElementIndex/WhileMethods.cs#L38) method in the _WhileMethods.cs_ file. Implement the [GetIndexOf(ushort[], ushort, int, int)](GettingArrayElementIndex/WhileMethods.cs#L11) static method. See TODO #4.
+1. Analyze the implementation of the [GetLastIndexOf(ulong[], ulong)](GettingArrayElementIndex/DoWhileMethods.cs#L17) method in the _DoWhileMethods.cs_ file. Implement the [GetIndexOf(ulong[], ulong)](GettingArrayElementIndex/DoWhileMethods.cs#L5) static method. See TODO #5.
+1. Analyze the implementation of the [GetLastIndexof(ulong[], ulong, int, int)](GettingArrayElementIndex/DoWhileMethods.cs#L42) method in the _DoWhileMethods.cs_ file. Implement the [GetIndexOf(ulong[], ulong, int, int)](GettingArrayElementIndex/DoWhileMethods.cs#L11) static method. See TODO #6.
 
 
 ## See also

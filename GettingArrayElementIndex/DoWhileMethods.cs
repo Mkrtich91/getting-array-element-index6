@@ -4,14 +4,69 @@
     {
         public static int GetIndexOf(ulong[]? arrayToSearch, ulong value)
         {
-            // TODO #5. Analyze the implementation of "GetLastIndexOf(ulong[], ulong)" method to see how "do..while" loop works, and implement the method using the "do..while" loop statement.
-            throw new NotImplementedException();
+            if (arrayToSearch is null)
+            {
+                throw new ArgumentNullException(nameof(arrayToSearch));
+            }
+
+            if (arrayToSearch.Length == 0)
+            {
+            return -1;
+            }
+
+            int index = 0;
+
+            do
+            {
+                if (arrayToSearch[index] == value)
+                {
+                return index;
+                }
+
+                index++;
+            }
+            while (index < arrayToSearch.Length);
+
+            return -1;
         }
 
         public static int GetIndexOf(ulong[]? arrayToSearch, ulong value, int startIndex, int count)
         {
-            // TODO #6. Analyze the implementation of "GetLastIndexOf(ulong[], ulong, startIndex, count)" method to see how "do..while" loop works, and implement the method using the "do..while" loop statement.
-            throw new NotImplementedException();
+            if (arrayToSearch == null)
+            {
+                throw new ArgumentNullException(nameof(arrayToSearch), "The arrayToSearch argument cannot be null.");
+            }
+
+            if (startIndex < 0 || startIndex > arrayToSearch.Length)
+            {
+                throw new ArgumentOutOfRangeException(nameof(startIndex), "The startIndex argument is out of range.");
+            }
+
+            if (count < 0 || startIndex + count > arrayToSearch.Length)
+            {
+                throw new ArgumentOutOfRangeException(nameof(count), "The count argument is out of range.");
+            }
+
+            if (arrayToSearch.Length == 0)
+            {
+                return -1;
+            }
+
+            int index = startIndex;
+
+            do
+            {
+                if (arrayToSearch[index] == value)
+                {
+                return index;
+                }
+
+                index++;
+                count--;
+            }
+            while (count > 0);
+
+            return -1;
         }
 
         public static int GetLastIndexOf(ulong[]? arrayToSearch, ulong value)
